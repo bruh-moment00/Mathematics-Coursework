@@ -1,0 +1,47 @@
+﻿<Window x:Class="Задание_курсовой.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Задание_курсовой"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="555.023" Width="709.584">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="68*"/>
+            <ColumnDefinition Width="369*"/>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="227*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="m_value" HorizontalAlignment="Left" Height="23" Margin="190,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" Text="4"/>
+        <Label Content="Введите m:" HorizontalAlignment="Left" Margin="34,32,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Button x:Name="x_button" Content="Сформировать массивы" HorizontalAlignment="Left" Margin="34,246,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click" Height="32" Grid.ColumnSpan="2"/>
+        <Label Content="Минимальное значение в массиве A:" HorizontalAlignment="Left" Margin="34,94,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Максимальное значение в массиве A:" HorizontalAlignment="Left" Margin="34,125,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="rnd1" HorizontalAlignment="Left" Height="23" Margin="190,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" Text="1"/>
+        <TextBox x:Name="rnd2" HorizontalAlignment="Left" Height="23" Margin="190,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" Text="10"/>
+        <TextBox x:Name="b_value" HorizontalAlignment="Left" Height="23" Margin="190,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" Text="5"/>
+        <Label Content="Введите B:" HorizontalAlignment="Left" Margin="34,63,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="cRnd1" HorizontalAlignment="Left" Height="23" Margin="190,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" Text="5"/>
+        <Label Content="Минимальное значение в массиве C:" HorizontalAlignment="Left" Margin="34,156,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Максимальное значение в массиве C:" HorizontalAlignment="Left" Margin="34,187,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="cRnd2" HorizontalAlignment="Left" Height="23" Margin="190,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1" Text="15"/>
+        <DataGrid x:Name="DataGridA" HorizontalAlignment="Left" Height="252" Margin="329,35,0,0" VerticalAlignment="Top" Width="295" Grid.Column="1" Grid.ColumnSpan="3"/>
+        <DataGrid x:Name="DataGridC" HorizontalAlignment="Left" Height="63" Margin="10,323,0,0" VerticalAlignment="Top" Width="176" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="DataGridX" HorizontalAlignment="Left" Height="63" Margin="10,422,0,0" VerticalAlignment="Top" Width="176" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="DataGridY" Grid.Column="1" HorizontalAlignment="Left" Height="63" Margin="123,323,0,0" VerticalAlignment="Top" Width="501" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="hValue" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="190,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0,2"/>
+        <Label Content="Введите шаг h:" HorizontalAlignment="Left" Margin="34,215,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <GroupBox Grid.ColumnSpan="2" Header="" HorizontalAlignment="Left" Height="277" Margin="10,10,0,0" VerticalAlignment="Top" Width="382"/>
+        <Label Content="Массив A" Grid.Column="1" HorizontalAlignment="Left" Margin="324,14,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Массив C" HorizontalAlignment="Left" Margin="10,292,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="66"/>
+        <Label Content="Массив X" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="69"/>
+        <Label Content="Неотсортированный массив Y" Grid.Column="1" HorizontalAlignment="Left" Margin="123,292,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="GridY_Sorted" Grid.Column="1" HorizontalAlignment="Left" Height="63" Margin="123,422,0,0" VerticalAlignment="Top" Width="501" Grid.ColumnSpan="3"/>
+        <Label Content="Отсортированный массив Y" Grid.Column="1" HorizontalAlignment="Left" Margin="123,391,0,0" VerticalAlignment="Top"/>
+        <Menu HorizontalAlignment="Left" Height="14" VerticalAlignment="Top" Width="702" Grid.ColumnSpan="4">
+            <MenuItem x:Name="ChartButton" Header="График" Height="14" FontSize="9" Click="Chart_Open" IsEnabled="False"></MenuItem>
+            <MenuItem Header="Текстовый файл" Height="14" FontSize="9"></MenuItem>
+        </Menu>
+    </Grid>
+</Window>
